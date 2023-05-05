@@ -27,7 +27,7 @@ SECRET_KEY = '@k0#p3kidu)yaaa3u1hplxz)f@^6xiy384*(+n@@s5x#1bx@m5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['machine-learning-projects-production.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = ['quiznado-production.up.railway.app','127.0.0.1']
 
 
 # Application definition
@@ -94,7 +94,7 @@ DATABASES = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = [ "https://machine-learning-projects-production.up.railway.app","http://127.0.0.1:8000"]
+CSRF_TRUSTED_ORIGINS = [ "https://quiznado-production.up.railway.app","http://127.0.0.1:8000"]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

@@ -20,14 +20,14 @@
     header {
       position: fixed;
       background: #22242A;
-      padding: 20px;
+      padding: 10px 20px;
       width: 100%;
       z-index: 1;
     }
 
     .left_area h3 {
       color: #fff;
-      margin: 0px;
+      margin-top: -15px;
       text-transform: uppercase;
       font-size: 22px;
       font-weight: 900;
@@ -42,7 +42,7 @@
       background: #19B3D3;
       text-decoration: none;
       float: right;
-      margin-top: -30px;
+      margin-top: -40px;
       margin-right: 40px;
       border-radius: 2px;
       font-size: 15px;
@@ -58,7 +58,7 @@
 
     .sidebar {
       background: #2f323a;
-      margin-top: 70px;
+      margin-top: 20px;
       padding-top: 30px;
       position: fixed;
       left: 0;
@@ -161,10 +161,10 @@
   <!--header area start-->
   <header>
     <label for="check">
-      <i style="left: 200px;margin-top: 17px;"class="fas fa-bars" id="sidebar_btn"></i>
+      <i style="left: 200px;"class="fas fa-bars" id="sidebar_btn"></i>
     </label>
     <div class="left_area">
-      <h3>Online Quiz</h3>
+      <h3>Quiznado</h3>
     </div>
     <div class="right_area">
       <a href="/logout" class="logout_btn">Logout</a>
@@ -172,16 +172,16 @@
   </header>
   <!--header area end-->
   <!--sidebar start-->
-  <div class="sidebar">
+  <div class="sidebar"> 
     <center>
 
-      <img src="{% static "image/student.png" %}" class="profile_image" alt="">
+      <img src="{% static "image/student.png" %}" class="profile_image" alt="" style="margin-top: 50px;">
       <h4>{{request.user.first_name}}</h4>
       <h6 style="color: rgb(255, 255, 255);">( Student )</h6>
 
     </center>
 
-    <a href="/student/student-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+    <a href="/student/student-dashboard" style="margin-top: 100px;"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
     <a href="/student/student-exam"><i class="fas fa-book"></i><span>Exam</span></a>
     <a href="/student/student-marks"><i class="fas fa-sort-numeric-up"></i><span>Marks</span></a>
   </div>
@@ -196,8 +196,6 @@
     {% endblock content %}
 
 
-    <br><br><br>
-    {% include "quiz/footer.html" %}
   </div>
   <!--content end-->
 </body>
